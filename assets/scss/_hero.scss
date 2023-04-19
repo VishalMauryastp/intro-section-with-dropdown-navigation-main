@@ -1,0 +1,150 @@
+section {
+    padding-top:4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    @media(max-width:1020px) {
+        justify-content: flex-start !important;
+        padding-top: 20px;
+    }
+
+    .hero {
+        // background-color: black !important;
+        max-width: 80%;
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
+        margin: 0 auto;
+        @media (max-width:1020px) {
+            max-width: 80%;
+            width: 500px;
+            align-items: flex-start !important;
+            flex-direction: column-reverse;
+        }
+
+        @media (max-width:376px) {
+            max-width: 100%;
+            width: 500px;
+            flex-direction: column-reverse;
+        }
+
+        &__content {
+            width: 60%;
+            padding: 20px;
+            display: grid;
+            place-items: center;
+
+            @media (max-width:1020px) {
+                width: 100%;
+            }
+
+            div {
+                max-width: 80%;
+                // margin-top: 5rem;
+                @media (max-width:1020px) {
+                    max-width: 100%;
+                }
+
+                h1 {
+                    color:hsl(0, 0%, 8%);
+                    font-size: 4.5rem;
+                    // padding-right: 20px;
+                    margin-top: 4rem;
+                    @media (max-width:1020px) {
+                        font-size: 1rem;
+                        margin-top: 1rem;
+                    }
+                    @media (max-width:1020px) {
+                        font-size: 2rem;
+                        text-align: center;
+                        margin-top: 1rem;
+                        br{
+                            display: none;
+                        }
+                    }
+                }
+
+                p {
+                    margin-top: 3rem;
+                    padding-right: 2rem;
+                    color: hsl(0, 0%, 41%);
+                    @media (max-width:1020px) {
+                        padding-right: 0rem;
+
+                        font-size: .9rem;
+                        text-align: center;
+                        margin-top: 1.5rem;
+                       
+                    }
+                }
+
+                a {
+                    margin-top:2rem;
+                    display:block;
+                    padding: 10px 20px;
+                    max-width: 135px;
+                    border: 2px solid black;
+                    background: black;
+                    color: white;
+                    border-radius: 10px;
+                    @media (max-width:1020px) {
+                        margin: 1.5rem auto;  
+                    }
+                }
+
+                .svg {
+                    margin-top: 4.5rem;
+                    max-width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    @media (max-width:1020px) {
+                        // font-size: 1.2rem;
+                        margin: 2.5rem 0; 
+                    }
+                    img {
+                        width:7rem;
+                        height:1.5rem;
+                        @media (max-width:1020px) {
+                            width: 68px;
+                            height: 20px; 
+                        }
+
+                    }
+                }
+            }
+
+
+        }
+
+        &__image {
+            max-width: 40%;
+
+            @media (max-width:1020px) {
+            
+                max-width: 100%;
+            }
+
+            .desktop-image {
+                width: 100%;
+
+                // max-width: ;
+                @media (max-width:1020px) {
+                    display: none;
+                }
+            }
+
+            .mobile-image {
+                width: 100%;
+                display: none;
+
+                @media (max-width:1020px) {
+                    display: block;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="./dist/style.css">
+  <script defer src="./assets/js/jquery-3.6.4.min.js"></script>
+  <script defer src="./assets/js/app.js"></script>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="nav  ">
+      <div class="nav__logo">
+        <img src="./assets/images/logo.svg" alt="logo">
+        <img class="ham " src="./assets/images/icon-menu.svg" alt="icon-menu">
+        <img class="close hidden " src="./assets/images/icon-close-menu.svg" alt="close_icon">
+
+      </div>
+      <div class="nav__links center ">
+        <!-- <div class="nav__links__close_btn">
+          <img class="hidden" src="./assets/images/icon-close-menu.svg" alt="close_icon">
+        </div> -->
+        <div class="nav__links__links s-b ">
+          <div class="nav__links__links__dropdown ">
+            <ul class="ul s-b">
+              <li><span>Features <img class="down-arrow" src="./assets/images/icon-arrow-down.svg"
+                    alt=" icon-arrow" /></span>
+                <div class="features_subnav_links  ">
+                  <a href="#"><img src="./assets/images/icon-todo.svg" alt="Todo"> Todo List</a>
+                  <a href="#"><img src="./assets/images/icon-calendar.svg" alt="icon-calendar"> Calender</a>
+                  <a href="#"><img src="./assets/images/icon-reminders.svg" alt="icon-reminders"> Reminders</a>
+                  <a href="#"><img src="./assets/images/icon-planning.svg" alt="icon-planning"> Planing</a>
+                </div>
+              </li>
+              <li><span>Company <img class="down-arrow2" src="./assets/images/icon-arrow-down.svg"
+                    alt="icon-arrow"></span>
+                <div class="company_subnav_links  ">
+                  <a href="#">History</a>
+                  <a href="#">Our Team</a>
+                  <a href="#">Blog</a>
+                </div>
+              </li>
+              <li> Careers </li>
+              <li>About </li>
+            </ul>
+          </div>
+          <div class="nav__links__links__login">
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <div class="hero ">
+        <div class="hero__content ">
+          <div class="">
+            <h1> Make <br> remote work</h1>
+            <p> Get your team in sync, no matter your location. Streamline processes,
+              create team rituals, and watch productivity soar.</p><br>
+            <a href="#">Learn more</a>
+  
+            <div class="svg ">
+  
+              <img src="./assets/images/client-databiz.svg" alt="client-databiz">
+              <img src="./assets/images/client-audiophile.svg" alt="client-audiophile">
+              <img src="./assets/images/client-meet.svg" alt="client-meet">
+              <img src="./assets/images/client-maker.svg" alt="client-maker">
+  
+            </div>
+
+
+          </div>
+       
+        </div>
+        <div class="hero__image ">
+          <img class="desktop-image" src="./assets/images/image-hero-desktop.png" alt="">
+          <img class="mobile-image" src="./assets/images/image-hero-mobile.png" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <!-- Features
+  Company
+  Careers
+  About
+
+  Login
+  Register
+
+  Make remote work
+
+  Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.
+
+  Learn more -->
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Vishal Maurya</a>.
+  </footer>
+</body>
+
+</html>
